@@ -590,6 +590,7 @@ public class JDOTransactionTest extends DatastoreTestCase {
     }
   };
 
+  @Inner("TODO -- see if we can avoid this tx mock check")
   public void testQueriesWithDatastoreTxn() throws Exception {
     PersistenceManagerFactory pmf = getPersistenceManagerFactory(
         JDOTestCase.PersistenceManagerFactoryName.transactional.name());
